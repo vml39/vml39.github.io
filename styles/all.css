@@ -5,49 +5,20 @@ body {
   margin: auto;
 }*/
 
-.grey {
-  background-color: gray;
-}
-
 h1 {
   text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+
+hr {
+  width: 80%;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
 }
 
 /** Nav */
-/* #nav {
-  display: inline;
-}
-
-#nav ul {
-  margin: auto;
-  padding: 10px;
-  overflow: hidden;
-  position: fixed;
-  width: 100%;
-  background-color: #F7F7F7;
-  opacity: 0.5;
-  z-index: 1;
-  text-align: right;
-}
-
-#nav li {
-  display: inline-block;
-  padding: 0;
-}
-
-#nav li a {
-  font-size: 20px;
-  font-weight: bold;
-  color: black;
-  padding: 10px 25px;
-  text-decoration: none;
-  opacity: 1;
-}
-
-#nav a:hover {
-  color: #662d91;
-} */
-
 #nav img {
   width: 100%;
 }
@@ -109,15 +80,15 @@ h1 {
 }
 
 #nav a:hover {
-  color: #662d91;
+  color: #00a3cc;
 }
 
-#current_section {
-  text-decoration: underline;
+/** Intro */
+#intro {
+  background-image: url("images/header.jpg");
 }
 
 /** About */
-
 #about {
   width: 80%;
   margin: auto;
@@ -125,7 +96,7 @@ h1 {
 
 #about_grid {
   display: grid;
-  grid-template-columns: 75% 5% 20%;
+  grid-template-columns: 70% 5% 25%;
 }
 
 #about_info {
@@ -137,34 +108,43 @@ h1 {
   grid-column: 3;
 }
 
-/* .errorContainer {
-  color: #de5454;
-  border: 1px #de5454 solid;
-  font-size: 14px;
-  padding-left: 5px;
-  text-align: center;
-  display: inline-block;
+/** Resume */
+#resume a {
+    font-size: 30pt;
+    color: #000;
+    text-align: center;
+    padding: 0;
 }
 
-.hiddenError {
-  display: none;
-} */
+/** Portfolio */
+.row{
+  width: 90%;
+  margin: 0 5%;
+}
+
+.row img{
+  width: 27%;
+  margin: 20px 3%;
+}
+
 
 /** Contact */
+#contact p {
+  text-align: center;
+}
+
 #contact ul {
   list-style-type: none;
   overflow: hidden;
-  background-color: #f7f7f7;
   width: 400px;
   margin: auto;
   height: 100px;
-  padding-left: 13%;
+  padding-left: 11%;
 }
 
 #contact li {
   float: left;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-right: 20px;
   margin-top: 5%;
 }
 
@@ -173,8 +153,14 @@ h1 {
     color: #000;
     text-align: center;
     padding: 0;
-  }
+}
 
 #contact a:hover {
-  color: #662d91;
+  color: #00a3cc;
+}
+
+/** Footer */
+#footer p{
+  text-align: center;
+  color: #808080;
 }
