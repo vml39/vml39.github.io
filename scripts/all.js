@@ -1,19 +1,43 @@
 $(document).ready(function() {
 
-  $("#contact").on("submit", function() {
-    // assume the form is valid, unless we find an invalid field
-    formValid = true;
+  var modal = document.getElementById("fun_facts");
+  var btn = document.getElementById("facts");
+  var span = document.getElementsByClassName("close")[0];
 
-    emailIsValid = $("#email").prop("validity").valid;
-    if(emailIsValid) {
-     $("#emailError").hide();
-    } else {
-     $("#emailError").show();
-     formValid = false;
+  btn.onclick = function() {
+    console.log("clicked");
+    modal.style.display = "block";
+    // $("#fun_facts").css("display", "block");
+
+  }
+
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
     }
+  }
 
-    return formValid;
+  // var modal = document.querySelector(".modal");
+  // var trigger = document.querySelector(".trigger");
+  // var closeButton = document.querySelector(".close-button");
 
-  });
+  // function toggleModal() {
+  //   console.log("toggle");
+  //   modal.classList.toggle("show-modal");
+  // }
+  //
+  // function windowOnClick(event) {
+  //   if (event.target === modal) {
+  //     toggleModal();
+  //   }
+  // }
+  //
+  // trigger.addEventListener("click", toggleModal);
+  // closeButton.addEventListener("click", toggleModal);
+  // window.addEventListener("click", windowOnClick);
 
 });

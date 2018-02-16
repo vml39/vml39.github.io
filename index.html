@@ -8,85 +8,161 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link href="https://fonts.googleapis.com/css?family=Khula" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Railway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Khula|Open+Sans|Oxygen|Handlee" rel="stylesheet">
   <script src="scripts/jquery-3.2.1.min.js" type="text/javascript"></script>
   <script src="scripts/all.js" type="text/javascript"></script>
 </head>
 
-<body>
+<body id="all">
   <div id="nav">
     <ul>
       <li><a href="#about">About</a></li>
-      <li><a href="#resume">Resume</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#activities">Activities</a></li>
+      <li><a href="#qualifications">Qualifications</a></li>
+      <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-</div>
+  </div>
 
-<!-- move the about heading down but figure out how to center it in the page as well -->
-<div id="intro">
-  <p>Hi, I'm Vivian.</p>
-  <!-- put text in a white box and put a picture behind -->
-</div>
+  <div id="intro">
+    <p>Hi, I'm Vivian, an environmental enthusiast and student programmer.</p>
+  </div>
 
-<hr/>
+  <hr/>
 
-<div id="about">
-  <h1>About</h1>
-  <div id="about_grid">
+  <div id="about">
+    <h1>About</h1>
     <div id="about_info">
-      <p>I'm a developer who is interested in software engineering, data science, and full-stack engineering. As an information science major, I have experience in a multitude of technological softwares and fields.
-      <br/><br/>
-      I'm looking for a software development internship in a challenging and collaborative team environment. I'm really hoping to test all of the skills I've learned in my classes and extra curricular activities from my time in college.</p>
-      <p>Check out some fun facts about who I am!</p>
-      <!-- ESFJ, blogging everyday for 3 years, adventurer, volleyballer
-    make modals!-->
+      <p>Hi, I'm Vivian! I'm a sophomore studying Computer & Information Sciences at Cornell University in Ithaca, NY. I'm also a developer who is interested in software engineering and full-stack engineering. I have experience in a multitude of programming languanges, such as Java and Python, and fields, such as software development, web development, and product design.</p>
+      <br/>
+      <p>I'm looking for a software development internship in a challenging and collaborative team environment. I'm really hoping to test all of the skills I've learned in my classes and extra curricular activities from my time in college, and expand upon them wherever I find myself working.</p>
+      <p>Check out some <button class="blue" id="facts">fun facts</button> about me!</p>
+          <!-- ESFJ, blogging everyday for 3 years, adventurer, part titanium, trilingual -->
+      </div>
+      <img id="viv" alt="" src="images/viv.jpg">
+  </div>
+
+  <div id="fun_facts" class="modal">
+    <div class="modal_content">
+      <span class="close">&times;</span>
+      <div class="modal_text">
+        <h1>Fun Facts!</h1>
+        <figure>
+          <img alt="" src="images/whitesands.JPG">
+          <figcaption>Taken during one of the most memorable trips of my life, at White Sands National Monument in White Sands, NM</figcaption>
+        </figure>
+        <ul>
+          <li>I grew up in the San Francisco Bay Area but I'm confident that my heart belongs in the East Coast.</li>
+          <li>My most recent Myers Briggs test result is ESFJ, but in the past year, I've gotten both ENFJ and ISFJ.</li>
+          <li>I've blogged every single day (minus 3) since January 2015.</li>
+          <li>My body is part titanium - I tore my ACL playing competitive volleyball and had to get surgery to get it replaced.</li>
+          <li>I love traveling! My favorite locations so far have been: Texas (Big Bend National Park) & New Mexico (Carlsbad Caverns, White Sands National Monument), Boston, and Yosemite.
+          <li>I'm a used-book hoarder - my favorite books include Cloud Atlas, Invisible Man, 1984, and Joy Luck Club.</li>
+          <li>I'm trilingual: I speak English, Chinese, and French.</li>
+          <li>The top 4 words my friends used to describe me are: reflective, independent, dependable, and caring.</li>
+          <li><a href="https://www.youtube.com/watch?v=KIePsbJSS04">This</a> is one of my favorite videos on YouTube!</li>
+        </ul>
+      </div>
     </div>
-    <img id="viv" alt="" src="images/viv.jpg">
   </div>
-</div>
 
-<hr/>
+    <hr/>
 
-<div id="resume">
-  <h1>Resume</h1>
-  <a href="resume.pdf"><i class="fa fa-external-link-square"></i></a>
-</div>
+    <div id="activities">
+      <h1>Activities</h1>
+      <p class="centered">Download my resume <a href="resume.pdf">here</a>!</p>
+      <p><span class="head">Cornell University Sustainable Design</span> | September 2017-Present<br/>
+        <span>Technical Operation Team, Currents Team</span>
+        <ul>
+          <li>Conceptualized, designed, and implemented a new centralized active member and alumni database for hundreds of present and past CUSD members to use, using Sketch, Node.js, HTML, and CSS</li>
+          <li>Specialized in backend website development for the database and implemented features such as file uploads, data storage, and data retrieval using Google Firebase</li>
+          <li>Conducted multiple rounds of User Experience research throughout the design process of the member database, and incorporated feedback into newer functional and design iterations</li>
+          <li>Developed an iOS app for the Currents project in which professors can control the HVAC systems in their classrooms and laboratories on campus</li>
+        </ul></p>
+        <p><span class="head">Canfield Lab</span> | January 2018-Present<br/>
+          <span>Data Analyst, IT</span>
+          <ul>
+            <li>Analyzed data for a child development study conducted in India researching the effects of child intake of iron and zinc biofortified pearl millet in their growth and immune functions</li>
+            <li>Compiled incoming data from videos using Adobe Premiere and specialized in Boris (Behavioral Observation Research Interactive Software) in order to render the data usable for a team of scientists</li>
+          </ul></p>
+          <p><span class="head">The Research Paper</span> | August 2017-Present<br/>
+            <span>Lead Designer</span>
+            <ul>
+              <li>Designed the entirety of the content for The Research Paper, the largest undergraduate research magazine at Cornell</li>
+              <li>Organized the design team through team meetings and created centralized layouts for members to apply, using Adobe InDesign, Photoshop, and Illustrator</li>
+            </ul></p>
+            <p><span class="head">Batt Lab</span> | April 2017-September 2017<br/>
+              <span>Researcher</span>
+              <ul>
+                <li>Created PowerPoint presentations and took pictures using a Nikon D200 for a live Disney exhibition that taught children about the different applications of nanotechnology</li>
+                <li>Developed and tested protocols for the identification of various fungal and bacterial samples shipped to the lab from domestic and international clients</li>
+                <li>Used lab techniques such as Microscopy, DNA extraction, PCR, DNA Purification, and Sequence Analysis</li>
+              </ul></p>
+              <p>
+                <span class="head">Chinese Students Association</span>, Social Chair <br/>
+                <span class="head">Cornell Environmental Collective (ECO)</span>, Community Development Team <br/>
+                <span class="head">Alternative Spring Breaks</span>, Harlem Grown Trip Participant<br/>
+                <span class="head">Empathy, Assistance, and Referral Services (EARS)</span> Trainee<br/>
+                <span class="head">Cornell College of Arts and Sciences</span> Peer Advisor
+              </p>
 
-<hr/>
+            </div>
 
-<div id="portfolio">
-  <h1>Portfolio</h1>
-  <div class = "row">
-    <!-- cs2110 projects (gui, a8), python projects, tetris-->
-  </div>
-  <div class = "row">
-    <!-- info1300 apple fest site, upload to github, final project -->
-  </div>
-</div>
+            <hr/>
 
-<hr/>
+            <div id="qualifications">
+              <h1>Qualifications</h1>
+              <p>
+                <span class="head">Programming Languages:</span> Java, Python, PHP<br/>
+                <span class="head">Website Development:</span> HTML, CSS, JavaScript<br/>
+                <span class="head">Graphic Design:</span> Adobe InDesign, Adobe Photoshop, Adobe Illustrator<br/>
+                <span class="head">Other:</span> R<br/><br/>
 
-<div id="contact">
-  <h1>Contact</h1>
-  <p>Please feel free to contact me for any more information!</p>
-  <!-- email icon and contact -->
+                Relevant Coursework:
+                <ul>
+                  <li>Object-Oriented Programming and Data Structures</li>
+                  <li>Computing Using Python</li>
+                  <li>Machine Learning for Python</li>
+                  <li>iOS Development</li>
+                  <li>Website Design and Programming</li>
+                  <li>Computational Sustainability</li>
+                  <li>Biological Statistics</li>
+                </ul>
+              </p>
+            </div>
 
-<ul>
-  <li><a href="mailto:vml39@cornell.edu"><i class="fa fa-envelope"></i></a></li>
-  <li><a href="https://www.linkedin.com/in/vivianmli/"><i class="fa fa-linkedin-square"></i></a></li>
-  <li><a href="https://angel.co/vivian-li-14"><i class="fa fa-angellist"></i></a></li>
-</ul>
-</div>
+            <hr/>
 
-<hr/>
+            <div id="projects">
+              <h1>Projects</h1>
+              <div class = "row">
+                <!-- cs2110 projects (gui, a8), python projects, tetris-->
+              </div>
+              <div class = "row">
+                <!-- info1300 apple fest site, upload to github, final project -->
+              </div>
+            </div>
 
-<div id="footer">
-  <p>© Vivian Li 2018</p>
-</div>
+            <hr/>
 
-</body>
+            <div id="contact">
+              <h1>Contact</h1>
+              <p class="centered">Please feel free to contact me for any more information!</p>
+              <!-- email icon and contact -->
 
-</html>
+              <ul>
+                <li><a href="mailto:vml39@cornell.edu"><i class="fa fa-envelope"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/vivianmli/"><i class="fa fa-linkedin-square"></i></a></li>
+                <li><a href="https://angel.co/vivian-li-14"><i class="fa fa-angellist"></i></a></li>
+              </ul>
+            </div>
+
+            <hr/>
+
+            <div id="footer">
+              <p class="centered">© Vivian Li 2018</p>
+            </div>
+
+          </body>
+
+          </html>
