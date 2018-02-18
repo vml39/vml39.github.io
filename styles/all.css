@@ -120,12 +120,12 @@ p, li{
 /** About */
 #about_info {
   width: 70%;
+  margin-right: 5%;
   float: left;
 }
 
 #about img {
   width: 25%;
-  float: right;
   margin-bottom: 10px;
 }
 
@@ -133,6 +133,10 @@ p, li{
   border: none;
   padding: 0;
   background-color: inherit;
+}
+
+.clear_float {
+  float: none;
 }
 
 #fun_facts img {
@@ -154,17 +158,15 @@ p, li{
   padding-left: 40px;
 }
 
-/** Activities */
-#activities a {
-  color: #00a3cc;
-}
-
+/** Qualifications */
 .head {
   font-weight: bolder;
 }
 
-/** Qualifications */
-
+/** Activities */
+#activities a {
+  color: #00a3cc;
+}
 
 /** Projects */
 .rw {
