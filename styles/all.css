@@ -45,34 +45,6 @@ p, li{
 }
 
 #nav ul {
-  margin: auto;
-  overflow: hidden;
-  text-align: center;
-  position: fixed;
-  width: 100%;
-  padding: 10px;
-}
-
-#nav li {
-  display: inline-block;
-  padding: 0;
-}
-
-#nav li a {
-  display: block;
-  font-family: "Khula", sans-serif;
-  font-size: 10pt;
-  color: white;
-  padding: 10px 10px;
-  text-decoration: none;
-  opacity: 0.6;
-}
-
-#nav a:hover {
-  opacity: 1;
-}
-
-#nav ul {
   display: inline;
   margin: auto;
   padding: 10px;
