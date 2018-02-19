@@ -51,34 +51,7 @@ p, li{
   position: fixed;
   width: 100%;
   padding: 10px;
-}
-
-#nav li {
-  display: inline-block;
-  padding: 0;
-}
-
-#nav li a {
-  display: block;
-  font-family: "Khula", sans-serif;
-  font-size: 10pt;
-  color: white;
-  padding: 10px 10px;
-  text-decoration: none;
-  opacity: 0.6;
-}
-
-#nav a:hover {
-  opacity: 1;
-}
-
-#nav ul {
   display: inline;
-  margin: auto;
-  padding: 10px;
-  overflow: hidden;
-  text-align: center;
-  position: fixed;
   background-color: #e6e6e6;
   opacity: 0.5;
   z-index: 1;
@@ -90,16 +63,18 @@ p, li{
 }
 
 #nav li a {
+  display: block;
   font-family: "Khula", sans-serif;
   font-size: 10pt;
-  font-weight: bold;
-  color: black;
   padding: 10px 10px;
   text-decoration: none;
+  font-weight: bold;
+  color: black;
   opacity: 1;
 }
 
 #nav a:hover {
+  opacity: 1;
   color: #00a3cc;
 }
 
