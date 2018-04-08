@@ -35,7 +35,7 @@ p, li{
   list-style: none;
 }
 
-#fun_facts ul li:before, #qualifications ul li:before {
+#fun_facts ul li:before, #qualifications ul li:before{
   content: "\00BB \0020";
 }
 
@@ -66,6 +66,7 @@ p, li{
   display: block;
   font-family: "Khula", sans-serif;
   font-size: 10pt;
+  color: white;
   padding: 10px 10px;
   text-decoration: none;
   font-weight: bold;
@@ -75,6 +76,9 @@ p, li{
 
 #nav a:hover {
   opacity: 1;
+}
+
+#nav a:hover {
   color: #00a3cc;
 }
 
