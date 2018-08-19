@@ -191,6 +191,7 @@ header .divider {
 
 .modal-content video {
   width: 90%;
+  height: 360px;
   margin: 0 5%;
 }
 
