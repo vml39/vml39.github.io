@@ -1,4 +1,6 @@
-/** All */
+/* --------------------------
+/* Document
+/* -------------------------- */
 
 /** font downloaded from google fonts */
 @font-face {
@@ -31,7 +33,9 @@ p, li, h1, h3, h4{
   color: var(--lightblue);
 }
 
-/** Header */
+/* --------------------------
+/* Header
+/* -------------------------- */
 
 header .divider {
   width: 50%;
@@ -47,7 +51,7 @@ header .divider {
 }
 
 .header_img h1 {
-  font-size: 32px;
+  font-size: 24pt;
   font-family: var(--myfont);
   padding-left: 10px;
   margin: 7px 0;
@@ -70,7 +74,7 @@ header .divider {
 }
 
 #nav li a {
-  font-size: 15px;
+  font-size: 11pt;
   color: black;
 }
 
@@ -87,7 +91,9 @@ header .divider {
   display: none;
 }
 
-/** About */
+/* --------------------------
+/* About
+/* -------------------------- */
 
 #about {
   width: 50%;
@@ -99,7 +105,10 @@ header .divider {
   text-decoration-color: var(--lightblue);
 }
 
-/** Resume */
+/* --------------------------
+/* Resume
+/* -------------------------- */
+
 #resume object {
   width: 100%;
   height: 1125px;
@@ -115,7 +124,9 @@ header .divider {
   width: 10%;
 }
 
-/** Work */
+/* --------------------------
+/* Work
+/* -------------------------- */
 
 .table-of-contents {
   width: 150px;
@@ -140,7 +151,7 @@ header .divider {
 
 #work h2 {
   font-family: var(--myfont);
-  font-size: 27px;
+  font-size: 20pt;
   padding-bottom: 10px;
   margin-top: 0;
   text-align: center;
@@ -186,7 +197,7 @@ header .divider {
 }
 
 .title {
-  font-size: 20px;
+  font-size: 15pt;
 }
 
 .lang {
@@ -234,7 +245,9 @@ footer {
   padding: 30px 0;
 }
 
-/** Responsive */
+/* --------------------------
+/* Responsive
+/* -------------------------- */
 
 /* Phone */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
@@ -248,7 +261,7 @@ footer {
   }
 
   .nav_contact {
-    display: show;
+    display: inline-block;
   }
 
   .header_img img {
