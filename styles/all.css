@@ -251,6 +251,12 @@ footer {
 
 /* Phone */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+  #nav, .header_img, #about, #resume_mobile, #work, #contact_mobile {
+    font-size: 250%;
+  }
+
+
   .container, #about, #contact_mobile {
     width: 90%;
   }
@@ -260,12 +266,21 @@ footer {
     padding-right: 0;
   }
 
+  #nav li a {
+    font-size: 28pt;
+  }
+
   .nav_contact {
     display: inline-block;
   }
 
   .header_img img {
     width: 30%;
+    margin: 20px 0;
+  }
+
+  .header_img h1 {
+    font-size: 50pt;
   }
 
   header .divider {
@@ -281,12 +296,20 @@ footer {
     display: block;
   }
 
+  #work h2 {
+    font-size: 50pt;
+  }
+
   .table-of-contents {
     display: none;
   }
 
   .card {
     width: 90%;
+  }
+
+  .title {
+    font-size: 38pt;
   }
 
   .contact_web {
