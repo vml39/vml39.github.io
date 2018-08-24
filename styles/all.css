@@ -252,7 +252,7 @@ footer {
 /* Phone */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
-  #nav, .header_img, #about, #resume_mobile, #work, #contact_mobile, footer{
+  #nav, .header_img, #about, #resume_mobile, #work, .modal, #contact_mobile, footer{
     font-size: 250%;
   }
 
@@ -308,8 +308,16 @@ footer {
     width: 90%;
   }
 
+  .modal p {
+    overflow-x: hidden;
+  }
+
   .title {
-    font-size: 38pt;
+    font-size: 36pt;
+  }
+
+  .modal h4 {
+    font-size: 40pt;
   }
 
   .contact_web {
