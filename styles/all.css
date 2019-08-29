@@ -111,13 +111,12 @@ header .divider {
 
 #resume object {
   width: 100%;
-  height: 1125px;
+  height: 1225px;
 }
 
 #resume_mobile {
   display: none;
   margin-bottom: 30px;
-
 }
 
 #resume_mobile img {
