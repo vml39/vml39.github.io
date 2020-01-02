@@ -36,6 +36,10 @@ p, li, h1, h3, h4{
   color: var(--lightblue);
 }
 
+.contact_mobile {
+  display: none;
+}
+
 /* --------------------------
 /* Header
 /* -------------------------- */
@@ -276,15 +280,35 @@ footer {
 /* Responsive
 /* -------------------------- */
 
-/* Phone */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+  #resume {
+    width: 80% !important;
+  }
+}
 
-  #nav, .header_img, #about, #resume_mobile, #work, .modal, #contact_mobile, footer{
-    font-size: 250%;
+/* Tablet */
+@media only screen and (max-width: 900px) {
+  .header_img img{
+    width: 20%;
   }
 
-  .container, #about, #contact_mobile {
-    width: 90%;
+  #resume {
+    width: 90% !important;
+  }
+
+  #resume object {
+    height: 700px;
+  }
+
+  .ex_card {
+    width: 49%;
+  }
+}
+
+/* Phone */
+@media only screen and (max-width : 600px) {
+  .container, #about {
+    width: 90% !important;
   }
 
   #nav ul {
@@ -292,21 +316,16 @@ footer {
     padding-right: 0;
   }
 
-  #nav li a {
-    font-size: 28pt;
-  }
-
   .nav_contact {
     display: inline-block;
   }
 
-  .header_img img {
-    width: 30%;
-    margin: 20px 0;
+  .header_img {
+    margin-top: 20px;
   }
 
-  .header_img h1 {
-    font-size: 50pt;
+  .header_img img {
+    width: 30%;
   }
 
   header .divider {
@@ -322,76 +341,37 @@ footer {
     display: block;
   }
 
-  #work h2 {
-    font-size: 50pt;
-  }
-
   .table-of-contents {
     display: none;
   }
 
   .ex_card {
-    width: 90%;
+    width: 100%;
   }
 
   .modal p {
     overflow-x: hidden;
   }
 
-  .title {
-    font-size: 36pt;
-  }
-
-  .modal h4 {
-    font-size: 40pt;
+  .modal-content video {
+    height: auto;
   }
 
   .contact_web {
     display: none;
   }
 
-  #contact_mobile {
-    margin: 30px 5%;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .header_img img{
-    width: 20%;
+  .contact_mobile ul {
+    display: inline-block;
+    margin-left: 35%;
   }
 
-  #resume object {
-    height: 700px;
+  .contact_mobile ul li{
+    display: inline-block;
+    padding: 0 5px;
   }
 
-  .ex_card {
-    width: 49%;
-  }
-}
-
-/* Phone */
-@media only screen and (max-width: 600px) {
-  .header_img img{
-    display: none;
-  }
-
-  .container {
-    width: 90% !important;
-  }
-
-  #resume object {
-    height: 600px;
-  }
-
-  .table-of-contents {
-    display: none;
-  }
-  
-  .ex_card {
-    width: 100%;
-  }
-
-  .modal-content video {
-    height: auto;
+  footer {
+    padding: 20px 0 1px 0;
   }
 }
