@@ -240,9 +240,13 @@ header .divider {
 }
 
 .modal-content img {
-  width: 80%;
+  width: 60%;
   margin: auto;
   margin-bottom: 20px;
+}
+
+.modal_image_small {
+  width: 40% !important;
 }
 
 .modal-content video {
